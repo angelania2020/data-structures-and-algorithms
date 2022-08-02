@@ -24,11 +24,12 @@ function containsCommonItem(arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
         for (let j = 0; j < arr2.length; j++) {
             if (arr1[i] === arr2[j]) {
-                console.log('true');
+                // console.log('true');
                 return true;
             }
         }
-    } console.log('false');
+    }
+    // console.log('false');
     return false;
 
 }
@@ -86,11 +87,11 @@ function containsCommonItem2(arr1, arr2) {
     // loop through second array and check if item in second array exists on created object.
     for (let j = 0; j < arr2.length; j++) {
         if (map[arr2[j]]) {
-            console.log('true');
+            // console.log('true');
             return true;
         }
     }
-    console.log('false');
+    // console.log('false');
     return false;
 
     // 2 separate for loops, not nested
@@ -141,7 +142,7 @@ function containsCommonItem2(arr1, arr2) {
 // Might not work if we use non-literal values
 
 function containsCommonItem3(arr1, arr2) {
-    console.log(arr1.some(item => arr2.includes(item)))
+    // console.log(arr1.some(item => arr2.includes(item)))
     return arr1.some(item => arr2.includes(item));
 }
 
